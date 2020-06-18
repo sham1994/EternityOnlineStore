@@ -27,9 +27,17 @@ namespace EternityStore.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //ordering not considered
             services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))); 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddCors();
+            //3 services
+            //1.AddSingleton = we create a single instance of our repository thorug out the application and it creates  the repository
+            //for the first time and it reuses the object in all of the course. Can cause issues when it comes to concurrent requests
+            //2.AddTransient = useful for light weight services, they are created each time they are requested
+            //3.AddScoped = services is created once per request with in the scope
+
+            services.AddScoped<IAuthRepository,AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +45,7 @@ namespace EternityStore.API
         {
             if (env.IsDevelopment())
             {
+                //concider about the order
                 app.UseDeveloperExceptionPage();
             }
             else
