@@ -1,0 +1,5 @@
+.image{
+    height:1000px; background-size:cover; width:auto;
+    background-image:url('../assets/gbackhome.jpg');
+    background-position:50% 50%;
+  }
