@@ -19,6 +19,7 @@ using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using EternityStore.API.Helpers;
 using Microsoft.AspNetCore.Http;
+using EternityStore.API.BusinessLayer;
 
 namespace EternityStore.API
 {
@@ -36,10 +37,12 @@ namespace EternityStore.API
         public void ConfigureServices(IServiceCollection services)
         {
             //ordering not considered
-            services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))); 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddCors();
+            services.AddScoped<IAuthBusinessLayer,AuthBusinessLayer>();
             services.AddScoped<IAuthRepository,AuthRepository>();
+            
             //3 services
             //1.AddSingleton = we create a single instance of our repository thorug out the application and it creates  the repository
             //for the first time and it reuses the object in all of the course. Can cause issues when it comes to concurrent requests
