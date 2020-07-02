@@ -6,7 +6,7 @@ using EternityStore.API.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+//using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using EternityStore.API.Helpers;
 using Microsoft.AspNetCore.Http;
 using EternityStore.API.BusinessLayer;
+using Microsoft.Extensions.Hosting;
 
 namespace EternityStore.API
 {
@@ -38,33 +39,34 @@ namespace EternityStore.API
         {
             //ordering not considered
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddCors();
             services.AddScoped<IAuthBusinessLayer,AuthBusinessLayer>();
             services.AddScoped<IAuthRepository,AuthRepository>();
+            //services.AddRazorPages();
             
             //3 services
             //1.AddSingleton = we create a single instance of our repository thorug out the application and it creates  the repository
             //for the first time and it reuses the object in all of the course. Can cause issues when it comes to concurrent requests
             //2.AddTransient = useful for light weight services, they are created each time they are requested
             //3.AddScoped = services is created once per request with in the scope
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options => {
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
+         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+         .AddJwtBearer(options => {
+             options.TokenValidationParameters = new TokenValidationParameters
+             {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
-                    .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
-                    ValidateIssuer = false,
+                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
+                 .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
+                 ValidateIssuer = false,
                     ValidateAudience = false
-                };
-            });
+             };
+         });
             
             
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -91,9 +93,16 @@ namespace EternityStore.API
             }
 
             //app.UseHttpsRedirection();
+            //app.UseRouting();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
-            app.UseMvc();
+            // app.UseEndpoints(endpoints => 
+            // {
+            //     endpoints.MapRazorPages();
+            // }
+            // );
+            //app.UseMvc();
+            
         }
     }
 }

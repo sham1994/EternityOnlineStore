@@ -17,7 +17,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/WebApi_Shamal/EternityStore.API/bin/Debug/netcoreapp2.2/EternityStore.API.dll",
+            "program": "${workspaceFolder}/WebApi_Shamal/EternityStore.API/bin/Debug/netcoreapp3.1/EternityStore.API.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WebApi_Shamal/EternityStore.API",
             "stopAtEntry": false,
