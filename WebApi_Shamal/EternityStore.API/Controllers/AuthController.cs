@@ -19,16 +19,16 @@ namespace EternityStore.API.Controllers
     {
         private readonly IConfiguration _config;
         private readonly IAuthBusinessLayer _authBusinessLayer;
-        public AuthController(IAuthBusinessLayer authBusinessLayer, IConfiguration config)
+        public AuthController(IAuthBusinessLayer D, IConfiguration config)
         {
             _authBusinessLayer = authBusinessLayer;
             _config = config;
         }
 
-        // [HttpPost("register")]
-        // public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
-        // {
-        //     userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
+         {
+             //userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
         //     if (await _repo.UserExists(userForRegisterDto.Username))
         //         return BadRequest("Username already exists");
 
@@ -38,8 +38,16 @@ namespace EternityStore.API.Controllers
         //     };
 
         //     var createdUser = await _repo.Register(userToCreate, userForRegisterDto.Password);
-        //     return StatusCode(201);
-        // }
+           // return StatusCode(201);
+        var userForRegister = await _authBusinessLayer.Register(userForRegisterDto.Username.ToLower(), userForRegisterDto.Password);
+                if(userForRegister == null)
+                
+                    return BadRequest("Username already exists");
+                
+                
+                return StatusCode(201);
+        }
+        
 
         [HttpPost("Login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)

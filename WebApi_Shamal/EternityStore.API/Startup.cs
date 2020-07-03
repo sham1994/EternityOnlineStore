@@ -37,12 +37,15 @@ namespace EternityStore.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            try {
             //ordering not considered
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddCors();
             services.AddScoped<IAuthBusinessLayer,AuthBusinessLayer>();
             services.AddScoped<IAuthRepository,AuthRepository>();
+            services.AddControllers();
             //services.AddRazorPages();
             
             //3 services
@@ -62,12 +65,17 @@ namespace EternityStore.API
              };
          });
             
-            
+            }
+            catch(Exception ex)
+            {
+                
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            try {
             if (env.IsDevelopment())
             {
                 //concider about the order
@@ -92,17 +100,21 @@ namespace EternityStore.API
                 });
             }
 
-            //app.UseHttpsRedirection();
-            //app.UseRouting();
+            app.UseHttpsRedirection();
+            app.UseRouting();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
-            // app.UseEndpoints(endpoints => 
-            // {
-            //     endpoints.MapRazorPages();
-            // }
-            // );
+             app.UseEndpoints(endpoints => 
+             {
+                 endpoints.MapControllers();
+             }
+             );
             //app.UseMvc();
-            
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
     }
 }

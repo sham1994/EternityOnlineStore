@@ -20,12 +20,12 @@ export class NavComponent implements OnInit {
     // console.log(this.model);
     this.authService.login(this.model).subscribe(
       (next) => {
-        //console.log('Logged in successfully');
+        // console.log('Logged in successfully');
         this.alertify.success('Logged in successfully');
       },
       (error) => {
-        console.log(error);
-        //this.alertify.error(error);
+        // console.log(error);
+        this.alertify.error(error);
       }
     );
   }
@@ -33,7 +33,8 @@ export class NavComponent implements OnInit {
   {
     const token = localStorage.getItem('token');
     return !!token;
-    // !! = shorthand of if condition , hey if something is there in the varaible return true but if something is not there in it return false
+    // !! = shorthand of if condition , hey if something is there in the varaible 
+    // return true but if something is not there in it return false
   }
 
   logOut(){
