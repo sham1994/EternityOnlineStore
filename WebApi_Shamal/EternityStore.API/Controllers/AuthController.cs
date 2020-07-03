@@ -19,7 +19,7 @@ namespace EternityStore.API.Controllers
     {
         private readonly IConfiguration _config;
         private readonly IAuthBusinessLayer _authBusinessLayer;
-        public AuthController(IAuthBusinessLayer D, IConfiguration config)
+        public AuthController(IAuthBusinessLayer authBusinessLayer, IConfiguration config)
         {
             _authBusinessLayer = authBusinessLayer;
             _config = config;
