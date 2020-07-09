@@ -59,7 +59,7 @@ namespace EternityStore.API.Controllers
 
             return Ok(new
             {
-               token = userForLogin
+               token = userForLogin.Token
             });
 
         }

@@ -1,33 +1,37 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Eternity Store</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/home']">Eternity Store</a>
 
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home </a>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/categories']"  >Categories</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Categories</a>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/products']">Products</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" *ngIf="loggedIn()" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/orders']">Orders</a>
+    </li>
+    <li class="nav-item" *ngIf="loggedIn()">
       <a class="nav-link" href="#">Cart</a>
     </li>
   </ul>
   <!-- Two types of angular form types 1. Template form verity 2.Reactive form verity -->
   <!-- Template reference variable is stated as with "#" -->
  <!-- structural directives have *s,Structural directives directly changes the dom  -->
- <div>
+ <!-- <div>
   <button type="button" class="btn btn-warning mr-sm-2" (click)="logOut()" *ngIf="loggedIn()" >Logout</button>
- </div> 
+ </div>  -->
  
- <div *ngIf="loggedIn()"class="dropdown">
-    <a class="dropdown-toggle text-light">
-   Welcome User
+ <div *ngIf="loggedIn()"class="dropdown" dropdown>
+    <a class="dropdown-toggle text-light" dropdownToggle>
+   Welcome {{authService.decodedToken?.unique_name | titlecase}}
     </a>
   
-    <div class="dropdown-menu" >
+    <div class="dropdown-menu mt-3" *dropdownMenu >
       <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Logout</a>
+      <a class="dropdown-item" (click)="logOut()"><i class="fa fa-sign-out"></i>Logout</a>
     </div>
   </div>
   <form *ngIf="!loggedIn()" #loginFrom="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
@@ -35,4 +39,6 @@
     <input class="form-control mr-sm-2" type="password" name="password" placeholder="Password" required [(ngModel)]="model.password"/>
     <button [disabled]="!loginFrom.valid" class="btn  btn-success my-2 my-sm-0" type="submit">Login</button>
   </form>
+  </div>
 </nav>
+  

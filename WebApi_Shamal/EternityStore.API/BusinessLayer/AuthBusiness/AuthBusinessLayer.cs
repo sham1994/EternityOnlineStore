@@ -48,16 +48,14 @@ namespace EternityStore.API.BusinessLayer
             var serializedToken = tokenHandler.WriteToken(token);
 
             return new UserForLoginDto{
-                Token = serializedToken,
-                Username = username,
-                Password = password
-                
+                Token = serializedToken 
             };
+            
         }
         public async Task<UserForRegisterDto> Register(string username, string password)
         {
             username = username.ToLower();
-            bool flag;
+            //bool flag;
             
             if(await _authrepo.UserExists(username))
            return null;
