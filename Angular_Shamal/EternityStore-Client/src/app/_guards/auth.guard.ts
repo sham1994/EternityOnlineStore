@@ -13,12 +13,11 @@ export class AuthGuard implements CanActivate {
     private alertify: AlertifyService )
     {}
   canActivate(): boolean{
-    // if (this.authService.loggedIn()){
-    //   return true;
-    // }
-    // this.alertify.error('Unauthorized!!!');
-    // this.router.navigate(['/home']);
-    // return false;
-    return null;
+    if (this.authService.loggedIn()){
+      return true;
+    }
+    this.alertify.error('Unauthorized!!!');
+    this.router.navigate(['/home']);
+    return false;
   }
 }
