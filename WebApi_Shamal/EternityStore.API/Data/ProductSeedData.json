@@ -1,0 +1,50 @@
+[
+    {
+        "Name" : "JBL Flip 5",
+        "UnitPrice" : "25000",
+        "Qty" : "20",
+        "Description" : "The good The affordable JBL Flip is a compact portable Bluetooth speaker that is designed to be used horizontally or vertically. It sounds good and plays loudly for its size, has speakerphone capabilities, and ships with a neoprene carrying case.",
+        "Created" : "2017-02-10",
+        "ProductPhotos" : [
+                {
+                    "url": "https://cdn.pixabay.com/photo/2020/04/22/12/11/brand-5077789_960_720.jpg",
+                    "isMain": true,
+                    "description": "Consectetur velit ullamco ea non."
+                }
+    
+        ],
+        "ProductCategoryId": "1"
+    },
+    {
+        "Name" : "Philipps TV",
+        "UnitPrice" : "75000",
+        "Qty" : "1",
+        "Description" : "Televisions receive broadcasting signals and change them into pictures and sound. The word television comes from the words tele (Greek for far away) and vision (sight).",
+        "Created" : "2017-02-10",
+        "ProductPhotos" : [
+                {
+                    "url": "https://cdn.pixabay.com/photo/2016/11/21/12/10/tv-1844964_960_720.jpg",
+                    "isMain": true,
+                    "description": "TV"
+                }
+    
+        ],
+        "ProductCategoryId": "1"
+    },
+    {
+        "Name" : "Sennheiser HD450BT",
+        "UnitPrice" : "25000",
+        "Qty" : "1",
+        "Description" : "Headphones. Headphones are small speakers that can be worn in or around your ears.",
+        "Created" : "2017-02-10",
+        "ProductPhotos" : [
+                {
+                    "url": "https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_960_720.jpg",
+                    "isMain": true,
+                    "description": "Headphone"
+                }
+    
+        ],
+        "ProductCategoryId": "1"
+    }
+]

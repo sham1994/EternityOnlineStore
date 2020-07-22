@@ -1,0 +1,184 @@
+[
+    {
+      "Username": "Patsy",
+      "Password": "password",
+      "address1": "595 Bond Street, Escondida, Mississippi, 409",
+      "City": "Hemlock",
+      "Country": "Maldives",
+      "Gender": "female",
+      "DateOfBirth": "1972-12-27",
+      "Created": "2017-02-10",
+      "LastActive": "2017-02-10",
+      "UserPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/63.jpg",
+          "isMain": true,
+          "description": "Consectetur velit ullamco ea non."
+        }
+      ]
+    },
+    {
+      "Username": "Trisha",
+      "Password": "password",
+      "address1": "302 Doscher Street, Spokane, Wisconsin, 4777",
+      "City": "Axis",
+      "Country": "Tanzania",
+      "Gender": "female",
+      "DateOfBirth": "1952-06-22",
+      "Created": "2017-02-24",
+      "LastActive": "2017-02-24",
+      "UserPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/26.jpg",
+          "isMain": true,
+          "description": "Consectetur non nisi exercitation consequat proident amet ullamco enim non ad enim eiusmod id dolor."
+        }
+      ]
+    },
+    {
+      "Username": "Lynnette",
+      "Password": "password",
+      "address1": "587 Auburn Place, Zarephath, Virgin Islands, 2283",
+      "City": "Loomis",
+      "Country": "Zimbabwe",
+      "Gender": "female",
+      "DateOfBirth": "1977-09-02",
+      "Created": "2017-04-05",
+      "LastActive": "2017-04-05",
+      "UserPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/25.jpg",
+          "isMain": true,
+          "description": "Aliquip magna pariatur duis deserunt amet est incididunt proident adipisicing cillum consectetur aliqua exercitation."
+        }
+      ]
+    },
+    {
+      "Username": "Natalia",
+      "Password": "password",
+      "address1": "518 Dewitt Avenue, Sattley, Maine, 5902",
+      "City": "Blodgett",
+      "Country": "Canada",
+      "Gender": "female",
+      "DateOfBirth": "1989-10-23",
+      "Created": "2017-05-19",
+      "LastActive": "2017-05-19",
+      "UserPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/50.jpg",
+          "isMain": true,
+          "description": "Duis velit ex ad ullamco eu voluptate elit officia."
+        }
+      ]
+    },
+    {
+      "Username": "Allyson",
+      "Password": "password",
+      "address1": "484 Front Street, Rivereno, Rhode Island, 8479",
+      "City": "Trinway",
+      "Country": "Slovenia",
+      "Gender": "female",
+      "DateOfBirth": "1993-09-03",
+      "Created": "2017-03-22",
+      "LastActive": "2017-03-22",
+      "UserPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/16.jpg",
+          "isMain": true,
+          "description": "Esse et minim cupidatat velit magna exercitation eu veniam magna laborum sit."
+        }
+      ]
+    },
+    {
+        "Username": "Bass",
+        "Password": "password",
+        "address1": "531 Brighton Court, Maybell, Georgia, 9020",
+        "City": "Caspar",
+        "Country": "Taiwan",
+        "Gender": "male",
+        "DateOfBirth": "1975-12-14",
+        "Created": "2017-03-28",
+        "LastActive": "2017-03-28",
+        "UserPhotos": [
+          {
+            "url": "https://randomuser.me/api/portraits/men/94.jpg",
+            "isMain": true,
+            "description": "Excepteur minim velit quis magna labore."
+          }
+        ]
+      },
+      {
+        "Username": "Pace",
+        "Password": "password",
+        "address1": "992 Pulaski Street, Stouchsburg, Nevada, 629",
+        "City": "Coinjock",
+        "Country": "Macedonia",
+        "Gender": "male",
+        "DateOfBirth": "1969-05-28",
+        "Created": "2017-04-24",
+        "LastActive": "2017-04-24",
+        "UserPhotos": [
+          {
+            "url": "https://randomuser.me/api/portraits/men/80.jpg",
+            "isMain": true,
+            "description": "Non exercitation nisi mollit deserunt dolor et cupidatat fugiat."
+          }
+        ]
+      },
+      {
+        "Username": "Chandler",
+        "Password": "password",
+        "address1": "652 Bay Avenue, Warsaw, Marshall Islands, 9438",
+        "City": "Homeworth",
+        "Country": "Uzbekistan",
+        "Gender": "male",
+        "DateOfBirth": "1973-04-15",
+        "Created": "2017-02-18",
+        "LastActive": "2017-02-18",
+        "UserPhotos": [
+          {
+            "url": "https://randomuser.me/api/portraits/men/54.jpg",
+            "isMain": true,
+            "description": "Cupidatat irure labore labore exercitation elit enim dolor est pariatur officia sunt do eiusmod nisi."
+          }
+        ]
+      },
+      {
+        "Username": "Moran",
+        "Password": "password",
+        "address1": "198 Butler Place, Hailesboro, Palau, 8923",
+        "City": "Gardners",
+        "Country": "Greenland",
+        "Gender": "male",
+        "DateOfBirth": "1995-04-05",
+        "Created": "2017-02-11",
+        "LastActive": "2017-02-11",
+        "UserPhotos": [
+          {
+            "url": "https://randomuser.me/api/portraits/men/80.jpg",
+            "isMain": true,
+            "description": "Culpa elit occaecat adipisicing aute commodo reprehenderit excepteur ea tempor cillum aliqua sint aute."
+          }
+        ]
+      },
+      {
+        "Username": "Harper",
+        "Password": "password",
+        "address1": "593 Stockton Street, Cumminsville, Texas, 3804",
+        "City": "Bagtown",
+        "Country": "Jordan",
+        "Gender": "male",
+        "DateOfBirth": "1950-11-23",
+        "Created": "2017-03-18",
+        "LastActive": "2017-03-18",
+        "UserPhotos": [
+          {
+            "url": "https://randomuser.me/api/portraits/men/39.jpg",
+            "isMain": true,
+            "description": "Ea laborum deserunt cillum eu in duis ad elit."
+          }
+        ]
+      }
+    
+    
+  ]

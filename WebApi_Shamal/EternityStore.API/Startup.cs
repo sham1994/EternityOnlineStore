@@ -21,6 +21,8 @@ using EternityStore.API.Helpers;
 using Microsoft.AspNetCore.Http;
 using EternityStore.API.BusinessLayer;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
+using AutoMapper;
 
 namespace EternityStore.API
 {
@@ -43,9 +45,18 @@ namespace EternityStore.API
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddCors();
+            services.AddAutoMapper(typeof(UsersRepository).Assembly);
             services.AddScoped<IAuthBusinessLayer,AuthBusinessLayer>();
             services.AddScoped<IAuthRepository,AuthRepository>();
+            services.AddScoped<IUsersRepository,UsersRepository>();
+            services.AddScoped<IProductCategoryRepository,ProductCategoryRepository>();
+            services.AddScoped<IProductRepository,ProductRepository>();
             services.AddControllers();
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+            
             //services.AddRazorPages();
             
             //3 services
@@ -68,7 +79,7 @@ namespace EternityStore.API
             }
             catch(Exception ex)
             {
-                
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -104,6 +115,7 @@ namespace EternityStore.API
             app.UseRouting();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
+            app.UseAuthorization();
              app.UseEndpoints(endpoints => 
              {
                  endpoints.MapControllers();
@@ -113,7 +125,7 @@ namespace EternityStore.API
             }
             catch(Exception ex)
             {
-
+                    Console.WriteLine(ex.Message);
             }
         }
     }
