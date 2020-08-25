@@ -25,6 +25,7 @@ import { CategoryProductbycategoryComponent } from './categories/category-produc
 import { FooterComponent } from './footer/footer.component';
 import { ProductCardComponent} from './products/product-card/product-card.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
 
 
 export function tokenGetter(){
@@ -33,7 +34,7 @@ export function tokenGetter(){
 
 
 @NgModule({
-   declarations: [
+   declarations: [	
       AppComponent,
       NavComponent,
       HomeComponent,
@@ -45,13 +46,8 @@ export function tokenGetter(){
       CategoryProductbycategoryComponent,
       FooterComponent,
       ProductCardComponent,
-      ProductDetailComponent
-
-
-
-
-
-
+      ProductDetailComponent,
+      CartComponent
    ],
    imports: [
       BrowserModule,

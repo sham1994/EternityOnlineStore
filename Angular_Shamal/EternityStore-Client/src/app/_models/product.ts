@@ -5,6 +5,8 @@ export interface Product {
     id: number;
     name: string;
     photoUrl: string;
+    description: string;
+    qty: number;
     unitPrice: any;
     productCategoryId: number;
     productphotos?: Photo[];

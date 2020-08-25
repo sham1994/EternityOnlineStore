@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Category } from '../_models/category';
+import { ProductCategoryService } from '../_services/productCategory.service';
+import { AlertifyService } from '../_services/alertify.service';
 
 
 @Component({
@@ -12,10 +15,12 @@ export class HomeComponent implements OnInit {
   // add a property  registerMode
   registerMode = false ;
   values: any;
-  constructor(private http: HttpClient) { }
+  categories: Category[];
+  constructor(private http: HttpClient, private productCategoryService: ProductCategoryService, private alertify: AlertifyService) { }
 
   ngOnInit() {
-    this.getValues();   
+    this.getValues();
+    this.loadCategories();
 }
 
 
@@ -35,5 +40,12 @@ getValues(){
 cancelRegisterMode(registerMode : boolean)
 {
  this.registerMode = registerMode;
+}
+loadCategories(){
+  this.productCategoryService.getCategories().subscribe((categories: Category[]) => {
+    this.categories = categories;
+  }, error => {
+    this.alertify.error(error);
+  });
 }
 }

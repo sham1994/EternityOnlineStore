@@ -52,7 +52,7 @@ namespace EternityStore.API.BusinessLayer
             };
             
         }
-        public async Task<UserForRegisterDto> Register(string username, string password)
+        public async Task<UserForRegisterDto> Register(string username, string password,string address1, string address2, string city, string country, string gender, DateTime dateofbirth)
         {
             username = username.ToLower();
             //bool flag;
@@ -62,7 +62,14 @@ namespace EternityStore.API.BusinessLayer
 
            var userToCreate = new User
             {
-                Username = username
+                Username = username,
+                Address1 = address1,
+                Address2 = address2,
+                City = city,
+                Country = country,
+                Gender = gender,
+                DateOfBirth = dateofbirth
+
               };
             var createdUser = await _authrepo.Register(userToCreate, password);
             return new UserForRegisterDto{

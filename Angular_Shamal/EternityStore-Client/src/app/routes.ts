@@ -5,6 +5,7 @@ import { CategoryListComponent } from './categories/category-list/category-list.
 import { AuthGuard } from './_guards/auth.guard';
 import { CategoryProductbycategoryComponent } from './categories/category-productbycategory/category-productbycategory.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,7 +24,8 @@ export const appRoutes: Routes = [
   { path : 'categories', component: CategoryListComponent},
   { path : 'categories/pbc/:id', component: CategoryProductbycategoryComponent},
   { path: 'products', component: ProductListComponent },
-  {path: 'productdetails/:id', component: ProductDetailComponent},
+  {path: 'products/:id', component: ProductDetailComponent},
+  {path: 'cart', component: CartComponent},
   // { path : 'orders', component: CategoryListComponent, canActivate:[AuthGuard]},
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

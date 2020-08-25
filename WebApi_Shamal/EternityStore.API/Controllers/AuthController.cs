@@ -39,7 +39,8 @@ namespace EternityStore.API.Controllers
 
         //     var createdUser = await _repo.Register(userToCreate, userForRegisterDto.Password);
            // return StatusCode(201);
-        var userForRegister = await _authBusinessLayer.Register(userForRegisterDto.Username.ToLower(), userForRegisterDto.Password);
+        var ufrd = userForRegisterDto; 
+        var userForRegister = await _authBusinessLayer.Register(ufrd.Username.ToLower(), ufrd.Password, ufrd.Address1,ufrd.Address2,ufrd.City,ufrd.Country,ufrd.Gender,ufrd.DateOfBirth);
                 if(userForRegister == null)
                 
                     return BadRequest("Username already exists");

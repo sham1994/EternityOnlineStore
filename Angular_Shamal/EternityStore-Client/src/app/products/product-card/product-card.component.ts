@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Category } from 'src/app/_models/category';
 import { Product } from 'src/app/_models/product';
+
+
 declare var $: any;
 
 
@@ -13,9 +15,9 @@ export class ProductCardComponent implements OnInit {
   @Input() category: Category;
   @Input() product: Product;
 
-  constructor() {
-
-  }
+  constructor()
+   {
+    }
 
   ngOnInit() {}
 

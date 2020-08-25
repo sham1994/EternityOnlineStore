@@ -1,0 +1,27 @@
+<h1>Cart</h1>
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.unitPrice | currency }}</span>
+</div>
+<div>
+  <div class="media mb-3" *ngFor="let item of items" style="border:5px solid indigo;">
+    <img class="d-flex mr-3" src="{{item.photoUrl}}"
+         alt="Generic placeholder image">
+    <div class="media-body">
+      <a class="float-right">
+        <span><i class="fa fa-times"></i></span>
+      </a>
+      <h5 class="mt-0 font-weight-bold text-primary">{{ item.name }}</h5>
+      <p class="font-weight-bold grey-text mb-2">test</p>
+      <div class="d-flex justify-content-between">
+        <p class="font-weight-bold">{{item.unitPrice}}</p>
+        <div class="def-number-input number-input safari_only mt-n05">
+          <button class="btn btn-info fa fa-minus"></button>
+          <input class="quantity font-weight-bold black-text" min="0" name="quantity" value="1"
+                 type="number">
+          <button class="btn btn-info fa fa-plus"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

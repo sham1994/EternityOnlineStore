@@ -1,11 +1,11 @@
 <div class="product-card">
     <div class="badge">Hot</div>
     <div class="product-tumb">
-        <img src="{{product.photoUrl}}" alt="{{product.name}}">
+        <img src="{{product.photoUrl}}" alt="{{product?.name}}">
     </div>
     <div class="product-details">
         <!-- <span class="product-catagory">{{product.name}}</span> -->
-        <h5><a href="">{{product.name}}</a></h5>
+        <h5><a [routerLink]="['/products/',product.id]" >{{product?.name}}</a></h5>
         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p> -->
         <div class="product-bottom-details">
             <div class="product-price"><small>Rs.96.00</small>Rs.{{product.unitPrice}}</div>
