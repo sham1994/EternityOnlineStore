@@ -1,0 +1,17 @@
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Helpers.deps.json
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Helpers.runtimeconfig.json
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Helpers.runtimeconfig.dev.json
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Helpers.dll
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Helpers.pdb
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Data.dll
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Entity.dll
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Data.pdb
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\bin\Release\netcoreapp3.1\EternityStore.Entity.pdb
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.csprojAssemblyReference.cache
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.AssemblyInfoInputs.cache
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.AssemblyInfo.cs
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.csproj.CoreCompileInputs.cache
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.csproj.CopyComplete
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.dll
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.pdb
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Helpers\obj\Release\netcoreapp3.1\EternityStore.Helpers.genruntimeconfig.cache

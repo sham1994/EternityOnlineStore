@@ -1,0 +1,225 @@
+2020-09-28 12:54:20.723 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 13:00:01.595 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 20:06:08.405 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 20:06:36.115 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 20:09:04.608 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 20:09:11.365 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 20:09:58.649 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 20:10:07.677 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 20:43:42.065 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 20:43:49.073 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 20:47:42.400 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegisterDto -> User
+EternityStore.Entity.UserForRegisterDto -> EternityStore.Data.Model.User
+   at lambda_method(Closure , UserForRegisterDto , User , ResolutionContext )
+   at EternityStore.Data.Repository.AuthRepository.Register(UserForRegisterDto userForRegisterDto, String password) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository\AuthRepository.cs:line 65
+   at EternityStore.API.BusinessLayer.AuthBusinessLayer.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Business\AuthBusiness\AuthManager.cs:line 69
+   at EternityStore.API.Controllers.AuthController.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Controller\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-28 20:47:42.400 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegisterDto -> User
+EternityStore.Entity.UserForRegisterDto -> EternityStore.Data.Model.User
+   at lambda_method(Closure , UserForRegisterDto , User , ResolutionContext )
+   at EternityStore.Data.Repository.AuthRepository.Register(UserForRegisterDto userForRegisterDto, String password) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository\AuthRepository.cs:line 65
+   at EternityStore.API.BusinessLayer.AuthBusinessLayer.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Business\AuthBusiness\AuthManager.cs:line 69
+   at EternityStore.API.Controllers.AuthController.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Controller\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-28 20:47:42.400 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegisterDto -> User
+EternityStore.Entity.UserForRegisterDto -> EternityStore.Data.Model.User
+   at lambda_method(Closure , UserForRegisterDto , User , ResolutionContext )
+   at EternityStore.Data.Repository.AuthRepository.Register(UserForRegisterDto userForRegisterDto, String password) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository\AuthRepository.cs:line 65
+   at EternityStore.API.BusinessLayer.AuthBusinessLayer.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Business\AuthBusiness\AuthManager.cs:line 69
+   at EternityStore.API.Controllers.AuthController.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Controller\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-28 20:48:02.040 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegisterDto -> User
+EternityStore.Entity.UserForRegisterDto -> EternityStore.Data.Model.User
+   at lambda_method(Closure , UserForRegisterDto , User , ResolutionContext )
+   at EternityStore.Data.Repository.AuthRepository.Register(UserForRegisterDto userForRegisterDto, String password) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository\AuthRepository.cs:line 65
+   at EternityStore.API.BusinessLayer.AuthBusinessLayer.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Business\AuthBusiness\AuthManager.cs:line 69
+   at EternityStore.API.Controllers.AuthController.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Controller\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-28 20:50:23.261 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegisterDto -> User
+EternityStore.Entity.UserForRegisterDto -> EternityStore.Data.Model.User
+   at lambda_method(Closure , UserForRegisterDto , User , ResolutionContext )
+   at EternityStore.Data.Repository.AuthRepository.Register(UserForRegisterDto userForRegisterDto, String password) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository\AuthRepository.cs:line 65
+   at EternityStore.API.BusinessLayer.AuthBusinessLayer.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Business\AuthBusiness\AuthManager.cs:line 69
+   at EternityStore.API.Controllers.AuthController.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Controller\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-28 20:51:14.171 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegisterDto -> User
+EternityStore.Entity.UserForRegisterDto -> EternityStore.Data.Model.User
+   at lambda_method(Closure , UserForRegisterDto , User , ResolutionContext )
+   at EternityStore.Data.Repository.AuthRepository.Register(UserForRegisterDto userForRegisterDto, String password) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository\AuthRepository.cs:line 65
+   at EternityStore.API.BusinessLayer.AuthBusinessLayer.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Business\AuthBusiness\AuthManager.cs:line 69
+   at EternityStore.API.Controllers.AuthController.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Controller\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-28 20:51:44.144 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 20:51:53.114 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 20:53:03.469 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegisterDto -> User
+EternityStore.Entity.UserForRegisterDto -> EternityStore.Data.Model.User
+   at lambda_method(Closure , UserForRegisterDto , User , ResolutionContext )
+   at EternityStore.Data.Repository.AuthRepository.Register(UserForRegisterDto userForRegisterDto, String password) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository\AuthRepository.cs:line 65
+   at EternityStore.API.BusinessLayer.AuthBusinessLayer.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Business\AuthBusiness\AuthManager.cs:line 69
+   at EternityStore.API.Controllers.AuthController.Register(UserForRegisterDto userForRegisterDto) in D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Controller\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-28 20:56:17.439 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 20:56:30.180 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 21:01:03.383 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 21:01:17.180 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 21:05:08.347 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 21:05:18.428 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 21:08:49.371 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 21:09:50.345 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 21:41:40.157 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 21:43:01.960 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 21:45:37.976 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 21:45:54.299 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 22:00:46.640 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 22:00:54.068 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 22:45:09.013 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 22:45:18.040 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 22:55:33.390 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 22:55:40.089 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 23:26:57.945 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 23:27:12.303 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 23:30:55.076 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 23:31:10.888 +05:30 [WRN] Failed to determine the https port for redirect.
+2020-09-28 23:34:43.529 +05:30 [ERR] An error occured during migration. Access to the path 'D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\Repository' is denied.
+2020-09-28 23:34:49.723 +05:30 [WRN] Failed to determine the https port for redirect.

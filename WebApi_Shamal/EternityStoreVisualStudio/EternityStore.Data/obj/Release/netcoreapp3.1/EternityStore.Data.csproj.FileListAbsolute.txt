@@ -1,0 +1,15 @@
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\bin\Release\netcoreapp3.1\EternityStore.Data.deps.json
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\bin\Release\netcoreapp3.1\EternityStore.Data.runtimeconfig.json
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\bin\Release\netcoreapp3.1\EternityStore.Data.runtimeconfig.dev.json
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\bin\Release\netcoreapp3.1\EternityStore.Data.dll
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\bin\Release\netcoreapp3.1\EternityStore.Data.pdb
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\bin\Release\netcoreapp3.1\EternityStore.Entity.dll
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\bin\Release\netcoreapp3.1\EternityStore.Entity.pdb
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.csprojAssemblyReference.cache
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.AssemblyInfoInputs.cache
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.AssemblyInfo.cs
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.csproj.CoreCompileInputs.cache
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.csproj.CopyComplete
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.dll
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.pdb
+D:\Virtusa Assignment\EternityStoreVisualStudio\EternityStore.Data\obj\Release\netcoreapp3.1\EternityStore.Data.genruntimeconfig.cache
