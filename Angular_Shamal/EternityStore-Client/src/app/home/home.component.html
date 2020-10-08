@@ -18,16 +18,76 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+<<<<<<< Updated upstream
 </div>
 <div class="container mt-5">
   <div *ngIf="!registerMode" style="text-align: center">
+=======
+</div> -->
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<div class="row" *ngIf="!registerMode" style="border:1px solid greenyellow;"  >
+  <div class="w-100" style= "border:1px solid #ee3e64; position: relative; overflow: hidden;">
+  
+    <carousel class="carousela"  >
+      <slide class="item">
+        <!-- <img src="../../assets/1test.jpg" alt="first slide" > -->
+        <img src="../../assets/banner1.jpg" alt="second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Welcome to Eternity Store</h1>
+          <h2>Expect the unexpected.</h2>
+          <p class="lead">All you need to do is sign up!</p>
+          <div class="text-center">
+            <button class="btn btn-primary btn-lg mr-sm-2" (click)="registerToggle()">Register</button>
+            <button class="btn btn-info btn-lg mr-sm-2">Learn more</button>
+          </div>
+        </div>
+      </slide>
+      <!-- <slide class="item">
+        <img src="../../assets/banner2.jpg" alt="second slide">
+      </slide> -->
+      <!-- <slide class="item">
+        <img src="../../assets/banner3.jpg" alt="third slide">
+      </slide> -->
+    </carousel>
+   
+  
+  </div>
+</div>
+<div class="row" style="border:1px solid yellow;" >
+  <!-- grid system in ng -->
+  <!-- <div *ngFor="let category of categories" class="col-md-2 col-md-3 col-sm-6" style="border:5px solid indigo;">
+    <app-category-card [category]="category"></app-category-card>
+  </div> -->
+
+</div>
+<div class="row" style="border:5px solid indigo;" >
+  <div class="container mt-4" *ngIf="!registerMode" style="border:50px solid green;">
+    <div class="row">
+      <!-- grid system in ng -->
+      <div *ngFor="let category of categories" class="col-md-2 col-md-3 col-sm-6">
+        <app-category-card [category]="category"></app-category-card>
+      </div>
+   </div>
+  </div>
+  <!-- <div class="container mt-4" *ngIf="!registerMode" style="text-align: center;position: relative;" >
+>>>>>>> Stashed changes
     <h1>Expect the unexpected.</h1>
     <p class="lead">All you need to do is sign up!</p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg mr-sm-2" (click)="registerToggle()">Register</button>
       <button class="btn btn-info btn-lg mr-sm-2">Learn more</button>
     </div>
+<<<<<<< Updated upstream
   </div>
+=======
+  </div> -->
+</div>
+>>>>>>> Stashed changes
 
   <div *ngIf="registerMode" class="container">
     <div class="row justify-content-center">

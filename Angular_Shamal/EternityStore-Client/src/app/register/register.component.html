@@ -11,11 +11,50 @@
   </div>
 
   <div class="form-group">
+<<<<<<< Updated upstream
     <label for="favouriteValue">Select Your Favourite Value</label>
     <select class="form-control" id="favouriteValue">
       <option *ngFor="let value of valuesFromHome" [value]="value">{{value.name}}</option>
     </select>
+=======
+    <label for="favouriteValue">Enter your Name</label>
+    <input type="text" id="firstName" class="form-control" required name="firstName" [(ngModel)]="model.firstName" placeholder="FirstName">
   </div>
+  <div class="form-group">
+    <input type="text" id="lastName" class="form-control" required name="lastName" [(ngModel)]="model.lastName" placeholder="lastName">
+  </div>
+  <div class="form-group">
+    <input type="text" id="genderOfUser" class="form-control" required name="Gender" [(ngModel)]="model.gender" placeholder="Gender">
+  </div>
+  <div class="form-group">
+    <input type="text" id="email" class="form-control" required name="email" [(ngModel)]="model.email" placeholder="email">
+  </div>
+
+  <div class="form-group">
+    <label for="favouriteValue">Enter your address</label>
+    <input type="text" id="address1OfUser" class="form-control" required name="AddressLine1" [(ngModel)]="model.addressLine1" placeholder="AddressLine1">
+  </div>
+  <div class="form-group">
+    <input type="text" id="address2OfUser" class="form-control" required name="AddressLine2" [(ngModel)]="model.addressLine2" placeholder="AddressLine2">
+  </div> 
+  <div class="form-group">
+    <input type="text" id="cityOfUser" class="form-control" required name="City" [(ngModel)]="model.city" placeholder="City">
+  </div>
+  <div class="form-group">
+    <input type="text" id="stateOfUser" class="form-control" required name="State" [(ngModel)]="model.state" placeholder="State">
+  </div> 
+  <div class="form-group">
+    <input type="text" id="countryOfUser" class="form-control" required name="Country" [(ngModel)]="model.country" placeholder="Country">
+>>>>>>> Stashed changes
+  </div>
+  <div class="form-group">
+    <input type="text" id="zipOfUser" class="form-control" required name="Zip" [(ngModel)]="model.zip" placeholder="Zip">
+  </div>
+  
+
+  <!-- <div class="form-group">
+    <input type="date" id="dobOfUser" class="form-control" required name="Date of birth" [(ngModel)]="model.dateofbirth" placeholder="Date of birth">
+  </div> -->
 
   <div class="form-group text-center">
     <button class="btn btn-success" type="submit">Register</button>

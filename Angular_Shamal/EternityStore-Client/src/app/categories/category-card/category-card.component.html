@@ -1,0 +1,17 @@
+<div class="card border-primary  mb-4 ">
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="{{category.photoUrl}}" alt="{{category?.name}}" >
+    <ul class="list-inline category-icons animate text-center">
+      <li class="list-inline-item">
+        <button class="btn btn-primary" title="View Products"
+        [routerLink]="['/categories/pbc/',category.id]">
+        <i class="fa fa-shopping-bag "></i></button></li>
+      <li class="list-inline-item"><button class="btn btn-primary" title="Add to Favourites"><i class="fa fa-heart"></i></button></li>
+    </ul>
+  </div>
+  <div class="card-body p-1">
+    <h6 class="card-title text-center mb-1">{{category.name}}</h6>
+  </div>
+</div>
+
+

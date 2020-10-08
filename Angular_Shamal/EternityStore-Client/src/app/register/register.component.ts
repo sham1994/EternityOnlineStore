@@ -11,11 +11,13 @@ export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
   //outupt property emits events
   model: any = {};
+  currentdate = new Date();
 
   constructor(private authService: AuthService) {}
 
   ngOnInit() {}
   register() {
+    this.model.created = this.currentdate;
     this.authService.register(this.model).subscribe(
       () => {
         console.log('Registration successful');

@@ -1,0 +1,151 @@
+<div>
+  <h1>Checkout</h1>
+</div>
+<hr class="blue-border mb-4">
+<div class="container" *ngIf="!registerMode">
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge badge-secondary badge-pill">{{cartItemsCount}}</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed" *ngFor="let item of items;let i = index">
+          <div>
+            <h6 class="my-0">{{item.name}}</h6>
+            <small class="text-muted">Qty: {{item.selectedProductQty}}</small>
+          </div>
+          <span class="text-muted">{{ getSubTotalOfAnItem(item)|currency}}</span>
+        </li>
+        
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>{{getSubTotalOfItems() |currency}}</strong>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Billing address</h4>
+      <form class="needs-validation" #checkoutForm="ngForm" (ngSubmit)="checkOutOrder()" novalidate>
+        <div class="row">
+          <div class="form-group col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" name="firstName"  placeholder="FirstName" value="" required [(ngModel)]="model.firstName"  >
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+          <div class="form-group col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" name="lastName"  placeholder="LastName" value="" required [(ngModel)]="model.lastName">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="username">Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" name="userName" placeholder="UserName" required [(ngModel)]="model.userName"  >
+            <div class="invalid-feedback" style="width: 100%;">
+              Your username is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" name="email" placeholder="you@example.com" [(ngModel)]="model.email" >
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="address">Address Line 1</label>
+          <input type="text" class="form-control" name="address" placeholder="1234 Main St" required  [(ngModel)]="model.addressLine1" >
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="address2">Address Line 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" name="address2" placeholder="Apartment or suite" [(ngModel)]="model.addressLine2" >
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-3 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" name="country" required [(ngModel)]="model.country">
+              <option value="">Choose...</option>
+              <option>Sri Lanka</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="form-group col-md-3 mb-3">
+            <label for="city">City</label>
+            <select class="custom-select d-block w-100" name="city" required [(ngModel)]="model.city" >
+              <option value="">Choose...</option>
+              <option>Colombo</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="form-group col-md-3 mb-3">
+            <label for="state">State/Province</label>
+            <select class="custom-select d-block w-100" name="state" required [(ngModel)]="model.state" >
+              <option value="">Choose...</option>
+              <option>Western Province</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="form-group col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" name="zip" placeholder="" required [(ngModel)]="model.zip">
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+        <!-- <hr class="mb-4">
+        <div class="form-group custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="form-group custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+        </div> -->
+   
+        <hr class="mb-4">
+        <button class="btn btn-success" type="submit">AddOrder</button>
+        <button class="btn btn-primary btn-lg btn-block" (click)="sendmail()">Process Order</button>
+        <hr class="mb-4">
+      </form>
+      <div>
+        <hr class="mb-4">
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- <div *ngIf="!registerMode" class="container" style="border:50px solid green;"> 
+    <div class="row justify-content-center">
+      <div class="col-4">
+  <app-register [valuesFromHome]="values" (cancelRegister)="cancelRegisterMode($event)"></app-register>
+    </div>
+    </div>
+  </div> -->

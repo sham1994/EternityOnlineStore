@@ -1,0 +1,11 @@
+<<<<<<< Updated upstream
+=======
+.dropdown-toggle,.dropdown-item{
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    white-space: nowrap;
+}
+
+>>>>>>> Stashed changes

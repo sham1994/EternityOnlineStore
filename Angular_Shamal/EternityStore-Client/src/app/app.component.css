@@ -1,5 +1,15 @@
 .image{
+<<<<<<< Updated upstream
     height:1000px; background-size:cover; width:auto;
     background-image:url('../assets/gbackhome.jpg');
     background-position:50% 50%;
   }
+=======
+  min-height: 100%; 
+  background-size:cover;
+  width: 100%;
+  background-image:url('../assets/gbackhome.jpg');
+  /* background-position:50% 50%; */
+  }
+  
+>>>>>>> Stashed changes

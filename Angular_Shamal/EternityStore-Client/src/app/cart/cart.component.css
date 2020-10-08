@@ -1,0 +1,14 @@
+.d-flex{
+    object-fit: contain; 
+    width:20%;
+    height:20%;
+
+}
+div.inline {
+float:left;
+}
+.total{
+    font-size: 16pt;
+}
+
+

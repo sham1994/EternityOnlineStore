@@ -8,9 +8,20 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Categories</a>
     </li>
+<<<<<<< Updated upstream
     <li class="nav-item">
       <a class="nav-link" href="#">Cart</a>
+=======
+    <li class="nav-item" *ngIf="loggedIn()" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/orders']">Orders</a>
     </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/cart']">Cart <span class="badge badge-light">{{cartItemsCount}}</span> </a>
+>>>>>>> Stashed changes
+    </li>
+    <!-- <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/checkout']">Checkout</a>
+    </li> -->
   </ul>
   <!-- Two types of angular form types 1. Template form verity 2.Reactive form verity -->
   <!-- Template reference variable is stated as with "#" -->

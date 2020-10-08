@@ -1,0 +1,22 @@
+<div>
+<div class="jumbotron">
+<h1>{{product?.name}}</h1>
+<hr class="my-4">
+<div class="row">
+  <div class="col-lg-4 col-sm-4">
+<img src="{{product?.photoUrl}}" alt="{{product?.name}}"/>
+</div>
+<div class="col-lg-8 col-sm-4">
+  <h6>{{product?.name}}</h6>
+  <h3>{{product?.unitPrice |currency}}</h3>
+  <p class= "lead">{{product?.description}}</p>
+  <p class= "lead">Availability : {{product?.qty}}</p>
+  <p class= "lead">Quantity : <span><input type="number" name="selectedProductQty" value="1" required  min=1 max="{{product?.qty}}" [(ngModel)]="selectedQty"> </span></p> 
+  <p class= "lead">
+    <a class="btn btn-warning btn-lg" href="#" type="button" ><i class="fa fa-money"></i> Buy Now</a>
+    <a class="btn btn-success btn-lg" (click)="addToCart(product)" role="button"  ><i class="fa fa-shopping-cart "></i> Add to Cart</a>
+  </p>
+</div>
+</div>
+</div>
+</div>

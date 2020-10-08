@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="row">
+<h1>Cart</h1>
+<!-- <div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.unitPrice | currency }}</span>
+</div> -->
+
+</div>
+<hr class="blue-border mb-4">
+<div class="row">
+  <button class="btn btn-warning" (click)="removeAllItems()">Remove All </button>
+</div>
+<div class="row">
+
+<div class ="col-8"  >
+  <form>
+  <table id="cartTable" class="table table-hover table-light">
+    <thead>
+      <tr>
+        <th  scope="col">#</th>
+        <th  scope="col">Item</th>
+        <th  scope="col">Item Price</th>
+        <th  scope="col">Item Qty</th>
+        <th  scope="col">SubTotal</th>
+        <th  scope="col">Remove</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.unitPrice | currency }}</td>
+        <td>{{item.selectedProductQty}}</td>
+        <td>{{getSubTotalOfAnItem(item)|currency}}</td>
+        <td><button class="btn btn-danger"  (click)="removeItem(item)">Remove</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</form>
+</div>
+<div class="col-4">
+  <div class="card" >
+    <div class="card-body">
+      <h4 class="card-title">Cart Summary</h4>
+      <!-- <hr class="blue-border mb-4"> -->
+      <h6 class="card-subtitle mb-2 text-muted">{{items.length}} in cart</h6>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Subtotal</th>
+            <td>{{getSubTotalOfItems()|currency}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Shipping cost</th>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <th scope="row">Tax</th>
+            <td>0.00</td>
+          </tr>
+          <tr class="total">
+            <th scope="row">TOTAL</th>
+            <td>{{getGrandTotal()|currency}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-success btn-lg btn-block" type="button" [routerLink]="['/checkout/']">Continue to checkout</button>
+      <a href="#" class="card-link">Card link</a>
+      
+    </div>
+  </div>
+</div>
+</div>
+<div>
+  </div>
+</div>
+  
